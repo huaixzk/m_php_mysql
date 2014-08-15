@@ -33,7 +33,9 @@ if(!get_magic_quotes_gpc())
 	$result = $db->query($query);
 
 	$num_results = $result->num_rows;
-
+if($num_results == 0)
+echo '<p>No results matched here;Retry search with another word.</p>';
+else
 echo '<p>Numbers of books found: '.$num_rows."</p>";
 
 	for($i = 0; $i < $num_results; $i++){
