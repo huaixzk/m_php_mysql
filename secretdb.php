@@ -14,9 +14,9 @@
 <form action="secretdb.php" method="post">
 <p>Username: <input type="text" name="name"></p>
 <p>Password: <input type="password" name="passwd"></p>
-<p><input type="submit" name="submit" value="Log In"></p>
+<p><input type="submit" name="submit" value="Log In"> 
+<a href="register.php">Register</a></p>
 </form>
-
 <?php
 	} else {
 	// connect to mysql
@@ -35,6 +35,7 @@ if(!$selected){
 }
 	
 //	query the database to see if there is a record which matches 
+//$
 $query = "select count(*) from authorized_users where name = '".$name."' and password = '".sha1($passwd)."' or name = '".$name."' and password = '".$passwd."'";
 #$query = "select count(*) from authorized_users where name = '".$name."' and password = '".sha1($passwd)."'";
 $result = mysqli_query($mysql, $query);
