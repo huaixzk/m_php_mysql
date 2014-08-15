@@ -26,7 +26,7 @@ if(!get_magic_quotes_gpc())
 	$isbn = addslashes($isbn);
 	$author =  addslashes($author);
 	$title = addslashes($title);
-	$price = addslashes($price);
+	$price = doubleval($price);
 }
 	$db = new mysqli('localhost', 'user', '00', 'mydb');
 	
