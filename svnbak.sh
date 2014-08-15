@@ -1,5 +1,6 @@
 #!/bin/bash
 DES=/svn
+DES0=/var/www/html
 M=m
 if [ -e /bin/xz ]
 then

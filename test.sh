@@ -5,3 +5,5 @@
 #
 # 1. ln -s `pwd`/.vimrc ~ # link the current work directory .vimrc to ~
 #
+#  tar -cjf m_bak.tar.bz2 m # bakup
+#
