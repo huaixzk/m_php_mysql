@@ -30,3 +30,6 @@
 * optimize table table_name;
 * flush tables;
 
+###DB SHA1###
+
+- insert into table_name values ('table_1', sha1('table_2'));
