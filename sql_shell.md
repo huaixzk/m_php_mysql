@@ -33,3 +33,6 @@
 ###DB SHA1###
 
 - insert into table_name values ('table_1', sha1('table_2'));
+- insert into authorized_users values ('b', 'a');
+- select * from authorized_users where name = 'root' and password = 'fb96549631c835eb239cd614cc6b5cb7d295121a'  or name = 'a' and  password = 'a';
+-  select * from authorized_users where name = 'root' and password = 'fb96549631c835eb239cd614cc6b5cb7d295121a'  or password = '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8';
