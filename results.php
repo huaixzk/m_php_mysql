@@ -11,7 +11,9 @@
 	//create short variable names
 	$searchtype=$_POST['searchtype'];
 	$searchterm=trim($_POST['searchterm']);
-if(!$searchtype || !$searchterm)
+	var_dump($searchtype);
+	Var_dump($searchterm);
+if($searchtype <> "all"&& !$searchterm)
 {
 	echo 'You have not entered search details. Please go back and <del>try again</del>.';
 	exit;
@@ -28,8 +30,10 @@ if(!get_magic_quotes_gpc())
 		echo 'Error: could not connect to database. Please try again later.';
 		exit;
 	}
-
+	if($searchtype <> "all")
 	$query = "select * from books where ".$searchtype." like '%".$searchterm."%'";
+	else
+	$query = "select * from books";
 	$result = $db->query($query);
 
 	$num_results = $result->num_rows;

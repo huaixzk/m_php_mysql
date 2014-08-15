@@ -51,6 +51,8 @@ if(!$result){
 // visitor's name and password combination are correct
 	echo "<h1> Here it is!</h1>
 		<p>I bet you are glad you can see this secret page.</p>";
+	echo "<p><a href=\"search.html\">Books for serch</a></p>";
+	echo "<p><a href=\"new_book.html\">Want to add a Book?</a></p>";
 } else {
 	// visitors's name and password combination are not correct;
 	echo "<h1>Go Away!</h1>
