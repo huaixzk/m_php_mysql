@@ -19,3 +19,14 @@
 
 * grant all on * to test identified by '00' with grant option;
 
+* describe  table | column;
+* explain table;
+
+==describe table || explain table|| show columns from table;==
+* explain select * from db_name.table_name;
+
+###optimize###
+
+* optimize table table_name;
+* flush tables;
+
