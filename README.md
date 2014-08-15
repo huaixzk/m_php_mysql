@@ -74,6 +74,9 @@ mysqli_free_result($db);
 $db->close();
 mysqli_close($db);
 
+$db->affected_rows;
+mysqli_affected_rows();
+
 ----------
 
 
