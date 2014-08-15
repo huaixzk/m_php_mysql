@@ -8,7 +8,7 @@
 * `htmlspecilalchars()`   *& < > "*
 
 ```
-if(!get_magic_quote_gpc())
+if(!get_magic_quotes_gpc())
 {
 	$searchtype = addslashes($searchtype);
 	$searchterm = addslashes($searchterm);
