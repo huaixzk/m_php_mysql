@@ -1,4 +1,5 @@
 #!/bin/bash
+echo  "hello"
 #
 ## all shell tests, edit and renew were allowed.
 # but do not use them directly.
