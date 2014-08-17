@@ -16,3 +16,4 @@ php upload dir and variables
 	- UPLOAD_ERR_NO_FILE 4 none uploaded
 	- UPLOAD_NO_TMP_DIR 6  no `upload_tmp_dir` in `php.ini`
 	- UPLOAD_ERR_CANT_WRITE 7 cannot write
+
