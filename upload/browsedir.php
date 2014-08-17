@@ -16,7 +16,11 @@
 	{
 		// strip out the two entries of . and ..
 		if ($file != "." && $file != "..")
-			echo "<li>$file</li>";
+		{//	echo "<li>$file</li>";
+			echo "<ol>".var_dump($file)."</ol>";
+		echo "<li><a href=\"filedetails.php?filename=".$file."\">".$file."</a></li>";
+			echo "<hr>";
+		}
 	}
 	echo "</ul>";
 	closedir($dir);

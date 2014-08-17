@@ -3,9 +3,9 @@
 	foreach( $_SERVER as $i => $j)
 	{
 		echo "<li><i>$i</i></li>";
-	//	echo "<li><b>$j</b></li>";
+		echo "<li><b>$j</b></li>";
 	//	echo "<ol>";
-	//	var_dump($j);
+		var_dump($j);
 	//	echo "</ol>";
 	}
 
