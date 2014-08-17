@@ -1,5 +1,5 @@
 <?php
-	echo $_SERVER['HOST'];
+	echo $_SERVER['SERVER'];
 
 
 ?>
