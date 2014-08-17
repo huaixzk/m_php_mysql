@@ -37,4 +37,35 @@ php upload dir and variables
 		echo "<a href=\"filedtails.php?file=".$file."\"></a>"";
 
 	}
+```
 
+###file function###
+
+- fileatime($file)
+- filemtime($file)
+-  date("jS F Y,H:i" )
+- fileowner()
+- filegroup()
+- posix_getpwuid()
+- posix_getgrdid()
+
+- fileperms()
+- decoct()
+- filetype() fifo char dir block link file unknown
+- filesize()
+- is_dir() is_file() is_readable() is_writable() is_executable() is_link()
+- stat()
+
+* chgrp()
+* chmod()
+* chown($file, user)
+ 
+- bool touch(string file,**)
+- unlink($filename)
+- copy($src, $des)
+- rename($old, $new)  // 相对脚本的地址， not path
+
+####exec function####
+
+- string exec (string commond, array &result, int &return_value)
+- 
