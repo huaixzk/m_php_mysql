@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Administration upload few files</title>
+	<meta content="text/plain" charset="utf-8">
+</head>
+<body>
+<h1>Upload new news files:</h1>
+<form action="upload.php" method='post' enctype='multipart/form-data'>
+	<div>
+		<input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+		<label for='userfile'>Upload a File:</label>
+		<input type="file" name="userfile" id="userfile" /><p>
+		<inPut type="submit" value="Send File"/>
+	</div>
+</form>
+</body>
+</html>
