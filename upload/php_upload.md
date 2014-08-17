@@ -67,5 +67,8 @@ php upload dir and variables
 
 ####exec function####
 
-- string exec (string commond, array &result, int &return_value)
-- 
+- string exec (string commond, array &result, int &return_value)  the return string is the last line
+
+- passthru(string commond, int return_value)  return all the commond output
+
+- system(string commond, int return_value)
