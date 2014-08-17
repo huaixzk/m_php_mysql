@@ -17,3 +17,24 @@ php upload dir and variables
 	- UPLOAD_NO_TMP_DIR 6  no `upload_tmp_dir` in `php.ini`
 	- UPLOAD_ERR_CANT_WRITE 7 cannot write
 
+####Dir information####
+
+- dirname($dir) get the dirname
+- basename($dir)
+- disk_free_space($dir) FLOAT byte
+
+####dir function####
+
+- mkdir($dir, 0777)
+-  $oldumask = umask(0);
+  	mkdir($dir, 0777);
+	umask($oldmask);
+- rmdir($dir)
+
+```
+	while(false !== ($file = readdir($dir)))
+	{
+		echo "<a href=\"filedtails.php?file=".$file."\"></a>"";
+
+	}
+
