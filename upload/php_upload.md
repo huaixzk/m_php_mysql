@@ -72,3 +72,6 @@ php upload dir and variables
 - passthru(string commond, int return_value)  return all the commond output
 
 - system(string commond, int return_value)
+- escapeshellcmd($commond)
+
+	system(escapeshellcmd($commond))
