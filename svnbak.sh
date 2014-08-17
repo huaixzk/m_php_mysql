@@ -24,18 +24,22 @@ then
 	cd $DES
 	if [ -d $M ];
 	then
-	tar $FLAGS $OUT $M 
+	echo "current dir: $PWD";
+	tar $FLAGS $OUT $M && echo "tar $M to $OUT successed."
 	fi
 else
 echo "already in $DES"
 if [ -d $M ];
       then
-      tar $FlAGS $OUT $M
+	echo "current dir: $PWD";
+      tar $FlAGS $OUT $M && echo "tar $M to $OUT successed."
+
       fi
 fi
 
 if [ -e $OUT ];
 then 
+	echo "current dir: $PWD";
 	$CP $OUT $TO
 	if [ $? == '0' ];
 		then 
@@ -50,7 +54,8 @@ fi
 
 BAK=php_mysql.$TAR
 cd /var/www/html
-tar $FLAGS $BAK $M 
+	echo "current dir: $PWD";
+tar $FLAGS $BAK $M && echo "tar $M to $BAK succeed"
 
 if [ $? == '0' ];
 then 
