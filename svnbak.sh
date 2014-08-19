@@ -2,7 +2,7 @@
 DES=/svn
 DES0=/var/www/html
 M=m
-TO=/var/ftp/svn
+TO=/var/www/html/svn
 
 CP=`which cp`
 TAR=`which tar`
